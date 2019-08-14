@@ -14,7 +14,7 @@ import io.flutter.plugin.common.PluginRegistry;
 import io.flutter.plugin.common.PluginRegistry.Registrar;
 
 //import android.content.IntentFilter;
-//import android.util.Log;
+import android.util.Log;
 
 /** UniLinksPlugin */
 public class UniLinksPlugin
