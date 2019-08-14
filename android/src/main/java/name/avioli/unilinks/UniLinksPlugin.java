@@ -66,9 +66,12 @@ public class UniLinksPlugin
   public void onMethodCall(MethodCall call, Result result) {
     if (call.method.equals("getInitialLink")) {
       result.success(initialLink);
-      // } else if (call.method.equals("getLatestLink")) {
-      //   result.success(latestLink);
+    } else if (call.method.equals("removeInitialLink")) {
+      initialLink = null;
+      Log.v("uni_links", "Removed initial link.");
+      result.success("removed");
     } else {
+      Log.v("uni_links", "Not implemented");
       result.notImplemented();
     }
   }

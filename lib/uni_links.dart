@@ -19,6 +19,10 @@ Future<String> getInitialLink() async {
   return initialLink;
 }
 
+Future<void> removeInitialLink() async {
+  await _mChannel.invokeMethod('removeInitialLink');
+}
+
 /// A convenience method that returns the initially stored link
 /// as a new [Uri] object.
 ///
